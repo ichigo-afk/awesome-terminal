@@ -1,4 +1,4 @@
-﻿#region awesome-terminal
+#region awesome-terminal
 function Sync-AwesomeTerminal {
     $pwshProfileCloudPath = "https://raw.githubusercontent.com/ichigo-afk/awesome-terminal/master/PowershellCoreProfile.ps1"
     $powershellProfileCloudPath = "https://raw.githubusercontent.com/ichigo-afk/awesome-terminal/master/PowershellProfile.ps1"

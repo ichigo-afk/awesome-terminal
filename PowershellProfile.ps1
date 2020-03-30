@@ -32,6 +32,7 @@ function ReplaceAwesomeTerminalRegion{
     $pattern = '\#region awesome-terminal[\s\S]*?\#endregion awesome-terminal.*$'
     $profileFile = Get-Content $profileFilePath -Raw
     $profileFile = [Regex]::Replace($profileFile, $pattern, $newProfileObject, $regexoptions)
+    Set-Content -Value $profileFile -Path $profileFilePath
 }
 
 Set-Alias sync Sync-AwesomeTerminal

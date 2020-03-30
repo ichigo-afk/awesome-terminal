@@ -2,6 +2,7 @@
 Ichigo's awesome Terminal Hacks - Windows Edition!
 
 ## Powershell and Powershell Core Profiles 
+> Now supports sync. Download the profiles once and setup, henceforth to update run sync
 * To use the powershell profile, run the following:
  ```powershell
 Install-Module posh-git -Scope CurrentUser

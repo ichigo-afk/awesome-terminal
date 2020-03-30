@@ -1,14 +1,9 @@
-
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
-
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-
-    "profiles":
-    [
+    "profiles": [
         {
             "backgroundImageOpacity": 0.1,
             "fontFace": "Delugia Nerd Font",
@@ -69,12 +64,16 @@
             "name": "Ubuntu",
             "source": "Windows.Terminal.Wsl",
             "colorScheme": "One Half Dark"
+        },
+        {
+            "guid": "{a3a2e83a-884a-5379-baa8-16f193a13b21}",
+            "hidden": false,
+            "name": "PowerShell 7 Preview",
+            "source": "Windows.Terminal.PowershellCore"
         }
     ],
-
     // Add custom color schemes to this array
     "schemes": [],
-
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
     "keybindings": [
@@ -101,6 +100,60 @@
             "keys": [
                 "ctrl+shift+tab"
             ]
+        },
+        {
+            "command": "copy",
+            "keys": [
+                "ctrl+c"
+            ]
+        },
+        {
+            "command": "paste",
+            "keys": [
+                "ctrl+v"
+            ]
+        },
+        {
+            "keys": [
+                "ctrl+alt+right"
+            ],
+            "command": {
+                "action": "splitPane",
+                "split": "vertical"
+            }
+        },
+        {
+            "keys": [
+                "ctrl+alt+left"
+            ],
+            "command": {
+                "action": "splitPane",
+                "split": "vertical"
+            }
+        },
+        {
+            "keys": [
+                "ctrl+alt+down"
+            ],
+            "command": {
+                "action": "splitPane",
+                "split": "horizontal"
+            }
+        },
+        {
+            "keys": [
+                "ctrl+alt+up"
+            ],
+            "command": {
+                "action": "splitPane",
+                "split": "horizontal"
+            }
+        },
+        {
+            "keys": [
+                "ctrl+w"
+            ],
+            "command": "closePane"
         }
     ]
 }

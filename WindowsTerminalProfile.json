@@ -22,7 +22,8 @@
             "name": "Developer v2019",
             "commandline": "pwsh.exe -noexit -command \"&{Import-Module \"\"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell e1455e4c; Set-Location D:\\Work}\"",
             "hidden": false,
-            "colorScheme": "One Half Dark"
+            "colorScheme": "One Half Dark",
+            "icon": "ms-appx:///ProfileIcons/{574e775e-4f2a-5b96-ac1e-a2962a402336}.png"
         },
         {
             "backgroundImageOpacity": 0.1,

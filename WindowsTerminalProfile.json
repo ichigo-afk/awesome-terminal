@@ -20,9 +20,8 @@
             "fontSize": 12,
             "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6100}",
             "name": "Developer v2019",
-            "commandline": "%comspec% /k \"C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/VsDevCmd.bat\"",
+            "commandline": "pwsh.exe -noexit -command \"&{Import-Module \"\"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell e1455e4c; Set-Location D:\\Work}\"",
             "hidden": false,
-            "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
             "colorScheme": "One Half Dark"
         },
         {

@@ -18,6 +18,13 @@ function Sync-AwesomeTerminal {
 
     #setting windows terminal profile
     $wtProfile = (iwr $wtProfileCloudPath).Content
+    $sh = New-Object -COM WScript.Shell
+    $targetPath = $sh.CreateShortcut("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools\Developer PowerShell for VS 2019.lnk")
+    if($targetPath.Arguments -match "Enter-VsDevShell (.*)}"){
+        $vsDevShellId = $Matches[1]
+        $wtProfile = $wtProfile -replace "Enter-VsDevShell (.*);", "Enter-VsDevShell $vsDevShellId;"
+    }
+    
     $wtProfileLocalPath = "$env:localappdata\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json"
     Set-Content -Value $wtProfile -Path $wtProfileLocalPath
     Write-Host "Synced wt profile"

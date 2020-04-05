@@ -35,7 +35,7 @@ function Sync-AwesomeTerminal {
 function ReplaceAwesomeTerminalRegion{
     param($profileFilePath, $newProfileObject)
     $regexoptions = [System.Text.RegularExpressions.RegexOptions]::Multiline
-    $pattern = [String]::Concat('\#region ' , 'awesome-terminal[\s\S]*?\#endregion ', 'awesome-terminal.*')
+    $pattern = [String]::Concat('\#region ' , 'awesome-terminal[\s|.|\S]*?\#endregion ', 'awesome-terminal.*')
     $profileFile = Get-Content $profileFilePath -Raw
     $profileFile = [Regex]::Replace($profileFile, $pattern, $newProfileObject, $regexoptions)
     Set-Content -Value $profileFile -Path $profileFilePath

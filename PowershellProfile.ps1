@@ -24,7 +24,6 @@ function Sync-AwesomeTerminal {
         $vsDevShellId = $Matches[1]
         $wtProfile = $wtProfile -replace "Enter-VsDevShell (.*);", "Enter-VsDevShell $vsDevShellId;"
     }
-    
     $wtProfileLocalPath = "$env:localappdata\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json"
     Set-Content -Value $wtProfile -Path $wtProfileLocalPath
     Write-Host "Synced wt profile"

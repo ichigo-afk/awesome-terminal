@@ -45,6 +45,7 @@ Set-Alias sync Sync-AwesomeTerminal
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-Theme Paradox
+git config --global push.default current
 
 # PSReadLine Edits
 Set-PSReadlineOption -EditMode Emacs

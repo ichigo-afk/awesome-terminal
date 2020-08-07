@@ -57,4 +57,5 @@ Set-PSReadLineKeyHandler -Key Ctrl+RightArrow -Function ForwardWord
 Set-PSReadLineKeyHandler -Key Shift+Ctrl+RightArrow -Function SelectForwardWord
 Set-PSReadLineKeyHandler -Key Shift+Ctrl+RightArrow -Function SelectForwardWord
 Set-PSReadLineKeyHandler -Key Ctrl+Backspace -Function BackwardKillWord
+Set-PSReadLineOption -PredictionSource History
 #endregion awesome-terminal

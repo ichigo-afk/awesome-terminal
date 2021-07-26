@@ -41,10 +41,11 @@ function ReplaceAwesomeTerminalRegion{
     Set-Content -Value $profileFile -Path $profileFilePath
 }
 
+$env:POSH_GIT_ENABLED = $true
 Set-Alias sync Sync-AwesomeTerminal
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme Paradox
+Set-PoshPrompt -Theme "D:\Work\awesome-terminal\ichigo-bubbles-theme.json"
 git config --global push.default current
 
 # PSReadLine Edits

@@ -1,0 +1,222 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#29315A",
+          "foreground": "#e8f807",
+          "leading_diamond": "",
+          "style": "diamond",
+          "trailing_diamond": " ",
+          "type": "root"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#E64747",
+          "leading_diamond": "",
+          "properties": {
+            "display_host": false,
+            "postfix": "",
+            "prefix": ""
+          },
+          "style": "diamond",
+          "trailing_diamond": " ",
+          "type": "session"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#3EC669",
+          "leading_diamond": "",
+          "properties": {
+            "postfix": "",
+            "prefix": " ",
+            "style": "full"
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "path"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#43CCEA",
+          "leading_diamond": " ",
+          "properties": {
+            "branch_icon": "",
+            "display_status_detail": false,
+            "postfix": "",
+            "prefix": ""
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "git",
+          "properties": {
+            "display_status": true,
+            "display_upstream_icon": true
+          }
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#E4F34A",
+          "leading_diamond": " ",
+          "properties": {
+            "display_version": false,
+            "postfix": "",
+            "prefix": ""
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "python"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#7FD5EA",
+          "leading_diamond": " ",
+          "properties": {
+            "display_version": false,
+            "postfix": "",
+            "prefix": "ﳑ"
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "go"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#42E66C",
+          "leading_diamond": " ",
+          "properties": {
+            "display_version": false,
+            "postfix": "",
+            "prefix": ""
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "node"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#E64747",
+          "leading_diamond": " ",
+          "properties": {
+            "display_version": false,
+            "postfix": "",
+            "prefix": ""
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "ruby"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#E64747",
+          "leading_diamond": " ",
+          "properties": {
+            "display_version": false,
+            "postfix": "",
+            "prefix": ""
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "java"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#9B6BDF",
+          "leading_diamond": " ",
+          "properties": {
+            "display_version": false,
+            "prefix": ""
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "julia"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#9B6BDF",
+          "leading_diamond": " ",
+          "properties": {
+            "battery_icon": "",
+            "charged_color": "#4caf50",
+            "charged_icon": " ",
+            "charging_color": "#40c4ff",
+            "charging_icon": "⇡ ",
+            "color_background": false,
+            "discharging_color": "#ff5722",
+            "discharging_icon": "⇣ ",
+            "display_charging": true,
+            "postfix": "",
+            "prefix": ""
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "battery"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "leading_diamond": " ",
+          "type": "time",
+          "style": "diamond",
+          "trailing_diamond": "",
+          "background": "#29315A",
+          "foreground": "#9B6BDF",
+          "properties": {
+            "time_format": "15:04:05"
+          }
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "background": "#29315A",
+          "foreground": "#AEA4BF",
+          "leading_diamond": "",
+          "properties": {
+            "postfix": "",
+            "prefix": "",
+            "style": "austin",
+            "threshold": 150
+          },
+          "style": "diamond",
+          "trailing_diamond": " ",
+          "type": "executiontime"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#7FD5EA",
+          "leading_diamond": "",
+          "properties": {
+            "postfix": "",
+            "prefix": "",
+            "text": "❯"
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "text"
+        },
+        {
+          "foreground": "transparent",
+          "properties": {
+            "postfix": "",
+            "prefix": "",
+            "text": " "
+          },
+          "style": "plain",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ]
+}

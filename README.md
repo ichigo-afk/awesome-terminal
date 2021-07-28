@@ -42,7 +42,7 @@ Set-Theme Paradox
 
 
 ##  Ichigo-Sama Gotchas
-* The __Oh-My-Posh__ uses power line symbols which might show weird glyphs if fonts aren't instaled. I use the Delugia Nerd Font from [here](https://github.com/adam7/delugia-code/releases) that combines the windows terminal default _Cascadia Code_ and PowerLine symbols
+* The __Oh-My-Posh__ uses power line symbols which might show weird glyphs if fonts aren't instaled. I use the CascadiaCode Nerd Font from [here](https://github.com/AaronFriel/nerd-fonts/releases) that combines the windows terminal default _Cascadia Code_ and PowerLine symbols
 * Creating a shortcut for windows terminal with admin mode enabled.
 * Use: `C:\Windows\System32\cmd.exe /c start /b wt`(This has an issue since /b in cmd disallows Ctrl+C or break to be run on the child process)
 * Recommended: Use `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Start-Process shell:appsFolder\Microsoft.WindowsTerminal_8wekyb3d8bbwe!App -Verb RunAs"`

@@ -206,7 +206,6 @@
           "type": "text"
         },
         {
-          "foreground": "transparent",
           "properties": {
             "postfix": "",
             "prefix": "",

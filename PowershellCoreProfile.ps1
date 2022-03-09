@@ -41,6 +41,54 @@ function ReplaceAwesomeTerminalRegion{
     Set-Content -Value $profileFile -Path $profileFilePath
 }
 
+function ConvertTo-DeveloperPrompt
+{
+    param([switch]$UseVSPreview)
+    pushd
+
+    Write-Host "Initializing Visual Studio Command Prompt Environment ..."
+    $vswhere = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe"
+    
+    # See https://aka.ms/vs/workloads for a list of product IDs.
+    $communityProductId = "Microsoft.VisualStudio.Product.Community"
+    $enterpriseProductId = "Microsoft.VisualStudio.Product.Enterprise"
+    $productId = $enterpriseProductId # or find a way to switch based on installation.
+    $productVersionRange = "[16,18)" 
+
+    if ($UseVSPreview){
+        $instanceId = & $vswhere -prerelease -version $productVersionRange -property instanceId -products $productId -latest
+        $installationPath = & $vswhere -prerelease -version $productVersionRange -property installationPath -products $productId -latest
+    }
+    else{
+        $instanceId = & $vswhere -version $productVersionRange -property instanceId -products $productId -latest
+        $installationPath = & $vswhere -version $productVersionRange -property installationPath -products $productId -latest
+    }
+
+    if ([string]::IsNullOrEmpty($instanceId)) {
+        Write-Host "Couldn't find the VS2019/VS2022 Enterprise edition. Finding any installed VS2019/VS2022 edition."
+
+        if ($UseVSPreview){
+            $instanceId = & $vswhere -prerelease -version $productVersionRange -property instanceId -latest
+            $installationPath = & $vswhere -prerelease -version $productVersionRange -property installationPath -latest
+        }
+        else{
+            $instanceId = & $vswhere -version $productVersionRange -property instanceId -latest
+            $installationPath = & $vswhere -version $productVersionRange -property installationPath -latest
+        }
+    }
+    
+    if ([string]::IsNullOrEmpty($instanceId)) {
+        throw "Visual Studio 2019/2022 is not properly installed. Visit https://visualstudio.microsoft.com/ to download and install Visual Studio."
+    }
+
+    # Write-Host "Detected visual studio installation path = $installationPath and instanceId = $instanceId"
+
+    Import-Module -Name "$installationPath\Common7\Tools\Microsoft.VisualStudio.DevShell.dll"
+    Enter-VsDevShell -VsInstanceId $instanceId -StartInPath $PSScriptRoot
+
+    popd
+}
+
 $env:POSH_GIT_ENABLED = $true
 $env:POSHGIT_CYGWIN_WARNING = $true
 Set-Alias sync Sync-AwesomeTerminal

@@ -41,6 +41,13 @@ function ReplaceAwesomeTerminalRegion{
     Set-Content -Value $profileFile -Path $profileFilePath
 }
 
+function Refresh-Path {
+    $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") +
+                ";" +
+                [System.Environment]::GetEnvironmentVariable("Path","User")
+}
+
+
 function ConvertTo-DeveloperPrompt
 {
     param([switch]$UseVSPreview)

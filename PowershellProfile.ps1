@@ -79,6 +79,11 @@ function ConvertTo-DeveloperPrompt
 
     popd
 }
+function Refresh-Path {
+    $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") +
+                ";" +
+                [System.Environment]::GetEnvironmentVariable("Path","User")
+}
 
 function ReplaceAwesomeTerminalRegion{
     param($profileFilePath, $newProfileObject)

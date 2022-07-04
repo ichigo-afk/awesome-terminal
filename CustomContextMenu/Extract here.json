@@ -1,0 +1,1 @@
+{"title":"Extract here","exe":"\"C:\\Program Files\\7-Zip\\7zG.exe\"","param":"x \"{path}\" -o\"{parent}\\*\"","icon":"\"C:\\Program Files\\7-Zip\\7zFM.exe\",0","acceptExts":".zip .7z .tar .rar","acceptDirectory":false,"acceptFile":true,"acceptMultipleFilesFlag":0,"pathDelimiter":"","paramForMultipleFiles":"","index":0}

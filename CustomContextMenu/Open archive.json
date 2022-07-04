@@ -1,0 +1,13 @@
+{
+    "title": "Open archive",
+    "exe": "\"C:\\Program Files\\7-Zip\\7zFM.exe\"",
+    "param": "\"{path}\"",
+    "icon": "\"C:\\Program Files\\7-Zip\\7zFM.exe\",0",
+    "acceptExts": ".zip .7z .rar .exe .iso",
+    "acceptDirectory": false,
+    "acceptFile": true,
+    "acceptMultipleFilesFlag": 0,
+    "pathDelimiter": "",
+    "paramForMultipleFiles": "",
+    "index": 0
+}

@@ -1,0 +1,1 @@
+io.popen('doskey /macrofile="E:\\awesome-terminal\\ClinkCMD\\cmd_doskey_aliases.txt"')

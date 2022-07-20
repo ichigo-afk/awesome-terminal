@@ -100,8 +100,7 @@ $env:POSH_GIT_ENABLED = $true
 $env:POSHGIT_CYGWIN_WARNING = $true
 Set-Alias sync Sync-AwesomeTerminal
 Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme "D:\Work\awesome-terminal\ichigo-bubbles-theme.json"
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\1_shell.omp.json" | Invoke-Expression
 git config --global push.default current
 $GitPromptSettings.AnsiConsole = $true
 

@@ -17,31 +17,16 @@
             "keys": "ctrl+t"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right"
-            },
-            "keys": "ctrl+alt+right"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right"
-            },
-            "keys": "ctrl+alt+left"
-        },
-        {
             "command": "paste",
             "keys": "ctrl+v"
         },
         {
             "command": 
             {
-                "action": "nextTab"
+                "action": "splitPane",
+                "split": "right"
             },
-            "keys": "ctrl+tab"
+            "keys": "alt+right"
         },
         {
             "command": 
@@ -60,10 +45,9 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "down"
+                "action": "nextTab"
             },
-            "keys": "ctrl+alt+down"
+            "keys": "ctrl+tab"
         },
         {
             "command": 
@@ -71,7 +55,7 @@
                 "action": "splitPane",
                 "split": "down"
             },
-            "keys": "ctrl+alt+up"
+            "keys": "alt+down"
         },
         {
             "command": "closePane",
@@ -86,7 +70,7 @@
         "defaults": 
         {
             "backgroundImageOpacity": 0.10000000000000001,
-            "colorScheme": "One Half Dark",
+            "colorScheme": "Vintage",
             "font": 
             {
                 "face": "CascadiaCode Nerd Font",
@@ -105,6 +89,7 @@
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
+                "icon": "E:\\awesome-terminal\\msdos.ico",
                 "name": "Command Prompt"
             },
             {
@@ -120,27 +105,20 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Ubuntu-20.04",
+                "guid": "{58d2648d-38c3-479e-a852-266ecdcf41c0}",
                 "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "Ubuntu-20.04",
+                "startingDirectory": "~"
             },
             {
-                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell fce79c27 -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}\"",
-                "guid": "{3a8ea23d-9e78-46ef-b620-19c30d7ab396}",
+                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell 5804790e -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}\"",
+                "guid": "{6f6b9051-68af-42b5-a9b6-299b0f40e4db}",
                 "hidden": false,
                 "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
                 "name": "Developer PowerShell for VS 2022",
                 "startingDirectory": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise"
-            },
-            {
-                "commandline": "powershell.exe -NoExit -ExecutionPolicy Unrestricted -Command \". { . utilities/Razzle.ps1 fre no_opt }\"",
-                "guid": "{65b7697c-83ba-482c-90e9-9268e36e9bdb}",
-                "hidden": false,
-                "icon": "D:\\Work\\awesome-terminal\\msdos.ico",
-                "name": "OS amd64fre no_opt",
-                "startingDirectory": "d:\\os\\src",
-                "suppressApplicationTitle": true
             }
         ]
     }

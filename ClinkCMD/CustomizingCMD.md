@@ -6,12 +6,15 @@ Trying to address some of these to make CMD usable for those of us who have expe
 Clink is a super cool way to bring bash-like functionalities into CMD, with options to easily add `.lua` scripts for extensibility. 
 - [Documentation for clink](https://chrisant996.github.io/clink/clink.html)
 - [Releases for clink](https://github.com/chrisant996/clink/releases)
+```powershell
+winget install clink
+```
 
 ## Install oh-my-posh
 `oh-my-posh` is simply my favourite prompt customizer of all time. It has several beautiful themes and when combined with `posh-git` has almost all the functionalities I'd expect from a terminal.
 oh-my-posh is now installed as a standalone executable using the command:
  ```powershell
-winget install JanDeDobbeleer.OhMyPosh -s winget
+winget install JanDeDobbeleer.OhMyPosh
 ```
 
 just in case it was previously installed as a PS module, uninstall it prior to installing:

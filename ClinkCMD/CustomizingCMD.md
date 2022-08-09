@@ -27,4 +27,4 @@ Simply copy the `.lua` scripts present in this folder to where clink scripts are
 
 ### Additional configurations:
 - Added a doskey aliases `cmd_doskey_aliases.lua` which adds basic common muscle-memory command translations like `ls`, `clear`, `cd without /d` etc to CMD. (Remember to change the path to .txt file)
-- add a `--quiet` flag to _x86.exe and _64.exe in `clink.bat` (typically present here: C:\Program Files (x86)\clink\clink.bat") file to supress copyright header on every prompt. 
+- add a quiet flag to supress copyright header being displayed on every CMD session. run `clink autorun install -- -q`

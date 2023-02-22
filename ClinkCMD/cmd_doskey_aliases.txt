@@ -1,3 +1,4 @@
 ls=dir
 clear=cls
 cd=cd /d $1
+sln0=slngen.cmd **/*proj

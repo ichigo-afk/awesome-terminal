@@ -5,7 +5,8 @@ Ichigo's awesome Terminal Hacks - Windows Edition!
 > Now supports sync. Download the profiles once and setup, henceforth to update run sync
 * To use the powershell profile, run the following:
  ```powershell
-winget install JanDeDobbeleer.OhMyPosh -s winget
+winget install JanDeDobbeleer.OhMyPosh -s 
+Install-Module PSReadLine -Force
 ```
 
 # If in powershell core, run the below command

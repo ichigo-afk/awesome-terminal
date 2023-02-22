@@ -104,6 +104,7 @@ $GitPromptSettings.AnsiConsole = $true
 
 # PSReadLine Edits
 Set-PSReadlineOption -EditMode Emacs
+Set-PSReadlineOption -PredictionSource History
 Set-PSReadLineKeyHandler -Key Escape -Function RevertLine
 Set-PSReadLineKeyHandler -Key Ctrl+c -Function CopyOrCancelLine
 Set-PSReadLineKeyHandler -Key Ctrl+LeftArrow -Function BackwardWord
